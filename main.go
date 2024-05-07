@@ -7,5 +7,9 @@ import (
 )
 
 func main() {
-  (&cli.App{}).Run(os.Args)
+	app := cli.App{
+		Name: "Broskii",
+    Usage: "A cli app to support the bros.",
+	}
+	app.Run(os.Args)
 }
